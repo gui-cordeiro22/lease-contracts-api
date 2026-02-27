@@ -1,0 +1,33 @@
+{
+    "name": "lease-contract-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:prod": "node build/server.js",
+        "start:dev": "tsx --watch src/server.ts",
+        "build": "tsup src --out-dir build",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@fastify/cors": "11.2.0",
+        "dotenv": "17.2.3",
+        "fastify": "5.7.4",
+        "puppeteer": "24.37.2",
+        "zod": "4.3.6"
+    },
+    "devDependencies": {
+        "@types/node": "25.2.0",
+        "eslint": "9.39.2",
+        "tsup": "8.5.1",
+        "tsx": "4.21.0",
+        "typescript": "5.9.3",
+        "vite-tsconfig-paths": "6.1.0",
+        "vitest": "4.0.18"
+    }
+}
