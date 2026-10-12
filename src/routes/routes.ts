@@ -3,6 +3,7 @@ import { FastifyInstance } from "fastify";
 
 // Utils
 import { buildHtml } from "../utils/build-html";
+import { currencyFormatter } from "../utils/currency-formatter";
 
 // Schema
 import { buildHtmlSchema } from "../utils/build-html/build-html.schema";
@@ -18,7 +19,7 @@ export const routes = async (app: FastifyInstance) => {
         const generatedContractHtml = buildHtml({
             tenantName,
             tenantCpf,
-            rentalPrice,
+            rentalPrice: currencyFormatter(rentalPrice),
             expirationDate,
         });
 
