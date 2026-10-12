@@ -1,6 +1,3 @@
-// Dependencies
-import extenso from "extenso";
-
 // Types
 import { BuildHtmlProps } from "./build-html.types";
 
