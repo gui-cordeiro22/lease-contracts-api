@@ -23,8 +23,6 @@ export const routes = async (app: FastifyInstance) => {
             expirationDate,
         });
 
-        console.log(currencyFormatter("1000"));
-
         const pdfBuffer = await pdfGenerator(generatedContractHtml);
 
         response

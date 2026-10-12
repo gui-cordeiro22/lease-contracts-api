@@ -1,3 +1,6 @@
+// Dependencies
+import extenso from "extenso";
+
 // Types
 import { BuildHtmlProps } from "./build-html.types";
 
@@ -6,6 +9,7 @@ import { data } from "../../constants/constants";
 
 // Utils
 import { cpfFormatter } from "../cpf-formatter";
+import { numberInWords } from "../number-in-words";
 
 export const buildHtml = (htmlData: BuildHtmlProps) => {
     return `
@@ -232,7 +236,7 @@ export const buildHtml = (htmlData: BuildHtmlProps) => {
 
                                         <div class="informationContent">
                                             <p>
-                                                ${htmlData.rentalPrice} a serem quitados no dia ${htmlData.expirationDate} de cada
+                                                ${htmlData.rentalPrice} a serem quitados no dia ${htmlData.expirationDate} (${numberInWords(htmlData.expirationDate)}) de cada
                                                 mês
                                             </p>
                                         </div>
