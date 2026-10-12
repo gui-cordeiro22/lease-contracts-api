@@ -232,7 +232,7 @@ export const buildHtml = (htmlData: BuildHtmlProps) => {
 
                                         <div class="informationContent">
                                             <p>
-                                                R$${htmlData.rentalPrice} a serem quitados no dia ${htmlData.expirationDate} de cada
+                                                ${htmlData.rentalPrice} a serem quitados no dia ${htmlData.expirationDate} de cada
                                                 mês
                                             </p>
                                         </div>

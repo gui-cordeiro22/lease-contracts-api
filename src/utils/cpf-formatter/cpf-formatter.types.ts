@@ -1,3 +1,3 @@
-export type CpfFormatterData = string;
+export type CpfFormatterData = string | undefined;
 
 export type CpfFormatterProps = CpfFormatterData;
